@@ -1,5 +1,15 @@
 .addbar-todo.style-2 {
-  padding: 0px 0px 48px 0px;
+  padding: 0px 0px 10px 0px;
+}
+
+.checkboxdef {
+  margin-bottom: 20px;
+  color: #a8a8a8;
+  padding-left: 30px;
+}
+
+.form-check-input[type="checkbox"] {
+  border-color: #6fbaff;
 }
 
 .addbar-todo.style-2 .horizontal-form {
@@ -46,6 +56,7 @@
   background: $Administratif;
   color: white;
   top: -10px;
+  padding: 0px 24px 2px 12px !important;
   position: relative;
   font-size: 1.25rem;
   font-weight: 600;
@@ -61,7 +72,7 @@
 .addbar-todo .newsubmit {
   height: 52px !important;
   border: none;
-  padding: 0px 24px 0px 12px !important;
+  padding: 0px 24px 19px 12px !important;
   font-size: 0.95rem;
   background: transparent;
 }
@@ -81,10 +92,10 @@
   border-color: $Administratif !important;
   font-size: 12px;
   border-radius: 12px !important;
-  font-family: "Inter", sans-serif;
 }
 
 .category-select {
+  width: 148px;
   padding: 4px 8px !important;
 }
 

@@ -4,7 +4,7 @@ import { Controller } from "@hotwired/stimulus";
 export default class extends Controller {
 	static targets = ["details", "personal"];
 	connect() {
-		console.log("toggel connécté");
+		console.log("toggle connécté");
 	}
 
 	disable() {
