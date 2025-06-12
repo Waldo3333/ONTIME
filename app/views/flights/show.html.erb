@@ -163,11 +163,6 @@
               <p class="flight-number"><%= @flight.flight_number %></p>
           </div>
 
-          <div class="departure-child">
-              <p class="departure-title"><i class="fas fa-hourglass-half"></i> Temps d'attente prévu:</p>
-              <p class="wait-time"><%= @flight.estimated_wait %></p>
-          </div>
-
         <% if @flight.international %>
           <div class="international-flight">
             <p><i class="fas fa-globe-americas"></i> <strong>Vol international</strong></p>
