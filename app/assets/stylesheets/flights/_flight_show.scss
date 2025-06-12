@@ -2,14 +2,35 @@
 .flight-show-title {
 	display: flex;
 	justify-content: center;
-	padding: 30px 0;
+	padding-top: 30px;
 	h1 {
 		text-align: center;
 		font-size: 32px;
 		font-weight: 800;
 	}
 }
+
+.shadow-bottom {
+	background: white;
+	box-shadow: 1 4px 6px rgba(185, 0, 0, 0.3) !important;
+	margin-bottom: 25px;
+	height: 1px;
+}
+
+// ------------------------------------------------------------------TACHES ET ALERTES
+// .flight-show-task-container-border {
+//   border: solid;
+//   border-color: $fond-button;
+//   border-radius: 15px;
+//   width: 350px;
+//   display: flex;
+//   justify-content: center;
+// }
 // ------------------------------------------------------------------TACHES
+.icon-ticket-flight {
+	margin-right: 0px;
+}
+
 .flight-show-task-container {
 	display: flex;
 	flex-direction: column;
@@ -18,9 +39,13 @@
 
 .flight-show-task-title {
 	display: flex;
-	justify-content: flex-start;
-	width: 300px;
+	justify-content: space-between;
+	width: 350px;
+	p {
+		font-weight: bold;
+	}
 }
+
 .flight-show-task-link {
 	display: flex;
 	flex-direction: column;
@@ -70,7 +95,7 @@
 .span {
 	position: absolute;
 	left: 10px;
-	height: 36px;
+	height: 37px;
 	p {
 		font-size: 16px;
 		margin-bottom: 8px;
@@ -110,8 +135,11 @@
 
 .flight-show-alert-title {
 	display: flex;
-	width: 300px;
-	justify-content: flex-start;
+	width: 350px;
+	justify-content: space-between;
+	p {
+		font-weight: bold;
+	}
 }
 
 .flight-show-alert-card-container {
@@ -170,6 +198,8 @@
 	p {
 		font-size: 26px;
 		margin-bottom: 8px;
+		color: white;
+		font-weight: 500;
 	}
 }
 
@@ -215,15 +245,17 @@
 	gap: 20px;
 	background-color: $fond-card;
 	border-radius: 15px 15px 0 0;
-	width: 350px;
+	width: 324px;
 	padding: 20px;
 }
 .flight-show-main-card {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-family: "Inter", sans-serif !important;
 	h2 {
 		font-size: 16px;
+		color: black;
 	}
 	p {
 		font-size: 10px;
@@ -238,12 +270,13 @@
 		display: flex;
 		text-decoration: none;
 		color: white;
-		justify-content: center;
+		justify-content: space-around;
 		align-items: center;
-		width: 350px;
+		width: 324px;
 		height: 60px;
 		background-color: $fond-button;
 		border-radius: 0 0 15px 15px;
+		font-family: "Inter", sans-serif !important;
 	}
 }
 // ------------------------------------------------------------------MAP
@@ -254,9 +287,14 @@
 	top: 100px;
 	width: 350px;
 	height: 300px;
-	background-color: rgba(76, 202, 221, 0.622);
 	z-index: -1;
 	pointer-events: none;
+}
+
+.flight-show-map_container iframe {
+	border: dashed !important;
+	border-radius: 15px !important;
+	border-color: #4d9afe !important;
 }
 
 // ------------------------------------------------------------------DETAILS VOL
@@ -266,6 +304,7 @@
 	margin-top: 350px;
 	flex-direction: column;
 	gap: 20px;
+	font-family: "Inter", sans-serif !important;
 }
 
 .departure-child {
@@ -274,8 +313,13 @@
 	justify-content: space-between;
 }
 
-.departure-title {
-	font-weight: 700;
+departure-child-depart {
+	display: flex;
+	flex-direction: column;
+}
+
+.departure-title p {
+	text-decoration: underline;
 }
 
 .flight-show-detail-container {
@@ -283,12 +327,13 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: $fond-card;
+	background-color: $fond-button;
 	gap: 16px;
 	border-radius: 15px;
 	transition: ease-out 0.2s;
 	h3 {
 		margin-top: 16px;
+		color: white !important;
 	}
 }
 
@@ -296,11 +341,18 @@
 	display: flex;
 	width: 100%;
 	flex-direction: column;
-	max-height: 400px;
+	max-height: 550px;
 	align-items: center;
 	padding: 0 16px;
 	text-align: center;
 	transition: ease 0.2s;
+	padding-top: 10px;
+	background-color: #bbd7ff;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	h3 {
+		color: white !important;
+	}
 }
 
 .flight-show-detail-toggle {
@@ -346,7 +398,7 @@
 .flight-show-button {
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
+	gap: 5px;
 	align-items: center;
 	height: max-content;
 	padding: 70px 0;
